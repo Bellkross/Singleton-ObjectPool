@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-	
+	Storage<thread>& ts = ThreadStorage::getInstance();
 	return 0;
 }
