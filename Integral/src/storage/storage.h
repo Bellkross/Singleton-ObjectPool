@@ -12,7 +12,7 @@ public:
 	virtual bool isEmpty() const;
 	virtual T* getResource();
 	virtual void returnResource(const T* resource);
-	virtual int getItemCount() const;
+	virtual int getItemsCount() const;
 	virtual int getCapacity() const;
 	virtual ~Storage();
 };

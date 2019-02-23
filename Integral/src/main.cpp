@@ -1,7 +1,9 @@
 #include <iostream>
-#include "storage/storage.h"
+#include "storage/thread_storage.h"
 
 using namespace std;
+
 int main() {
+	
 	return 0;
 }
