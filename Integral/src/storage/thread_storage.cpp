@@ -1,11 +1,16 @@
 #include "thread_storage.h"
 
+#include <mutex>
+
 ThreadStorage* ThreadStorage::instance = 0;
 const int ThreadStorage::defaultCapacity = 16;
 
 ThreadStorage& ThreadStorage::getInstance() {
 	if (instance == 0) {
-		instance = new ThreadStorage();
+		lock_guard<mutex> lockGuard(mutex);
+		if (instance == 0) {
+			instance = new ThreadStorage;
+		}
 	}
 	return *instance;
 }
