@@ -1,4 +1,4 @@
-# Singleton presentation review
+# Project review
 
 - **Author**: Kyrylo Vasylenko
 
