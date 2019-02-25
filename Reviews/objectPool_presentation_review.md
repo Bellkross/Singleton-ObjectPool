@@ -1,4 +1,4 @@
-# Singleton presentation review
+# Object Pool presentation review
 
 - **Author**: Kyrylo Vasylenko
 
